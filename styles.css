@@ -5,3 +5,22 @@
     align-items: center;  
     margin-top: 175px; 
 }
+
+.search-bar {
+   display: flex; 
+   border: 1px solid #dfe1e5; 
+   height: 25px; 
+   width: 482px; 
+   border-radius: 8px; 
+   justify-content: center; 
+   align-items: center; 
+   flex-direction: row; 
+}
+
+.search-input {
+    border-radius: 8px;
+    height: 25px; 
+    width: 482px; 
+    border: 1px solid #dfe1e5; 
+}
+
