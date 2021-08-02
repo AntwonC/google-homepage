@@ -1,14 +1,42 @@
 .inside-header {
     display: flex; 
+    
 }
 
 .about-text {
-    margin-right: 5px; 
+    margin-right: 10px; 
+
 }
 
-..store-text {
-    margin-left: 5px; 
+.store-text { 
+    margin-left: 10px;
+
 }
+
+.gmail-text {   
+    margin-left: 85%;
+}
+
+.images-text {
+     margin-left: 20px;  
+}
+
+.temp {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    
+   
+}
+
+/*.apps-image {
+    margin-left: 20px; 
+}
+
+.signIn-button {
+    margin-left: 20px; 
+} */
+
 
 .container {
     display: flex; 
