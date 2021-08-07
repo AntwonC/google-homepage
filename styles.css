@@ -1,43 +1,71 @@
+/* Scroll bar hidden when resizing 
+   https://stackoverflow.com/questions/13671691/make-page-without-scrollbar-but-footer-in-the-bottom-with-css */
+html {
+    overflow: hidden;
+}
+/* TOP LEFT HEADER START */
 .inside-header {
     display: flex; 
+    justify-content: space-between; 
+    flex: 1; 
     
 }
 
 .about-text {
-    margin-right: 10px; 
-
+    margin-right: 5px; 
+    margin-left: 5px; 
+    font-family: arial,sans-serif;
+    color: rgba(0,0,0,0.87);
 }
 
 .store-text { 
-    margin-left: 10px;
-
+    margin-left: 5px;
+    font-family: arial,sans-serif;
+    color: rgba(0,0,0,0.87);
 }
+/* TOP LEFT HEADER END */
 
+/* TOP RIGHT HEADER START */
 .gmail-text {   
-    margin-left: 85%;
+    margin-right: 5px; 
+    font-family: arial,sans-serif;
+    color: rgba(0,0,0,0.87);
 }
 
 .images-text {
-     margin-left: 20px;  
+     margin-left: 5px;
+     margin-right: 5px;
+     font-family: arial,sans-serif;  
+     color: rgba(0,0,0,0.87); 
 }
 
-.temp {
+.top-right-header-container {
     display: flex;
+    flex: 1; 
     justify-content: flex-end; 
     align-items: flex-end;
-    
-   
 }
 
-/*.apps-image {
-    margin-left: 20px; 
+.apps-image {
+    margin-left: 5px;
+    margin-right: 5px;  
 }
 
 .signIn-button {
-    margin-left: 20px; 
-} */
+    margin-left: 5px; 
+    margin-right: 5px; 
+    font-family: arial,sans-serif;
+    color: white;
+    border: 1px solid #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    line-height: 28px;
+    font-weight: bold;
+    
+} 
+/* TOP RIGHT HEADER END */ 
 
 
+/* BODY CONTENT START */
 .container {
     display: flex; 
     justify-content: center; 
@@ -68,11 +96,9 @@
 .mic-image {
     border: 1px hidden #dfe1e5;
     border-radius: 8px;
-    height: 25px; 
-    
-
-   
+    height: 25px;  
 }
+
 .search-input {
     border-radius: 8px;
     height: 25px; 
@@ -86,6 +112,7 @@
     align-items: center; 
     justify-content: center; 
     margin-top: 30px; 
+    margin-bottom: 504px;
 }
 
 .search-button {
@@ -105,3 +132,72 @@
     background-color: #1b0303;
     border: 1px solid #dfe1e5; 
 }
+
+/* BODY CONTENT END */
+
+/* FOOTER START */ 
+.footer {
+    background-color: #f2f2f2; /*#f2f2f2 */
+    border-top: 1px solid #e4e4e4;
+    line-height: 3;
+    margin-left: -10px;
+    margin-right: -6px; 
+    margin-bottom: -300px;
+    padding-bottom: -3000px;
+    margin-top: 30px;
+    /* box-shadow extends to the bottom, but doesn't add scroll bar 
+    https://stackoverflow.com/questions/9741701/how-can-i-extend-a-footer-to-bottom-of-page */ 
+    box-shadow: 0 50vh 0 50vh w#e4e4e4; 
+    justify-content: space-between; 
+    flex: 1; 
+   
+}
+
+.footer-container {
+    display: flex; 
+    
+}
+
+.advertising-text {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family: arial,sans-serif;
+}
+
+.business-text {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family: arial,sans-serif;
+}
+
+.how-search-text {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family: arial,sans-serif;
+}
+
+.bottom-right-footer-container {
+    display: flex; 
+    justify-content: flex-end; 
+    flex: 1; 
+    
+}
+
+.privacy-text {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family: arial,sans-serif;
+}
+
+.terms-text {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family: arial,sans-serif;
+}
+
+.settings-text {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family: arial,sans-serif;
+}
+
